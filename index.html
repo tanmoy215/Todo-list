@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PG Student Daily Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>PG Student Daily Expense Tracker</h1>
+
+        <!-- Budget Section -->
+        <div class="budget-section">
+            <h2>Set Your Monthly Budget</h2>
+            <input type="number" id="monthlyBudget" placeholder="Enter your monthly budget" />
+            <button id="setBudgetBtn">Set Budget</button>
+            <div id="budgetMessage"></div>
+        </div>
+
+        <!-- Expense Section -->
+        <div class="expense-section">
+            <h2>Track Your Expenses for Today</h2>
+            <input type="text" id="expenseCategory" placeholder="Expense Category (e.g., Mess)" />
+            <input type="number" id="expenseAmount" placeholder="Expense Amount" />
+            <button id="addExpenseBtn">Add Expense</button>
+        </div>
+
+        <!-- Expense List -->
+        <h3>Expense List (Today)</h3>
+        <ul id="expenseList"></ul>
+
+        <!-- Summary -->
+        <div class="summary">
+            <p><strong>Total Expenses Today:</strong> ₹<span id="totalExpenses">0</span></p>
+            <p><strong>Remaining Budget:</strong> ₹<span id="remainingBudget">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
